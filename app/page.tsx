@@ -74,7 +74,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       fetchUpdateStatusOfLists();
-    }, 3000); // change the delay
+    }, 30000); // change the delay
     return () => clearInterval(interval);
   }, [lists]);
 
